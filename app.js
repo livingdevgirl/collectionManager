@@ -3,10 +3,11 @@ const expressHandlebars = require('express-handlebars');
 const dataFile = require('./public/data');
 const bodyParser = require('body-parser')
 const app = express()
-const mongoose = require('mongoose').MongoClient;
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/newdb');
 mongoose.Promise = require('bluebird');
 // Replace "test" with your database name.
-mongoose.connect('mongodb://localhost:27017/newdb');
+
 
 
 app.engine('handlebars', expressHandlebars());
