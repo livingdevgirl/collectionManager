@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-
 // var findDocuments = function(db, callback) {
 //   // Get the documents collection
 //   var collection = newdb.collection('robots');

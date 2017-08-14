@@ -9,10 +9,6 @@ mongoose.createConnection('mongodb://localhost:27017/newdb').MongoClient;
 mongoose.Promise = require('bluebird');
 
 
-
-
-
-
 app.engine('handlebars', expressHandlebars());
 app.set('views', './views');
 app.set('view engine', 'handlebars');
@@ -30,17 +26,7 @@ for (var i = 0; i < dataFile.users.length; i++) {
         dataFile.users[i].job = "reboot me, i need work!";
         // document.querySelector('.job').style.color = "red";
   }
-  var findDocuments = function(db, callback) {
-    // Get the documents collection
-    var collection = newdb.collection('robots');
-    // Find some documents
-    collection.find().toArray(function(err, docs) {
-      assert.equal(err, null);
-      console.log("Found the following records");
-      console.log(docs)
-      callback(docs);
-    });
-  };
+console.log(robots.find())
 }
   res.render('home', dataFile)
 });
