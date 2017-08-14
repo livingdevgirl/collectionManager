@@ -32,7 +32,7 @@ const robotSchema = new mongoose.Schema({
     country: String
   }]
 });
-
+//test
 
 const robot = mongoose.model('robot', robotSchema)
 
