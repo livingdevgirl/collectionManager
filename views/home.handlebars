@@ -14,10 +14,10 @@
 
   </header>
   <section class="robotsAreCool">
-    {{#users}}
+    {{#robots}}
 
-    {{#robot}}{{username}}{{/robot}}
-    <section class="robots">
+    {{username}}
+    <section class="robotinst">
     <a href="/{{username}}"><h2>{{name}}</h2>
 
         <div><img class="userAv" src="{{avatar}}" alt=""></div>
@@ -25,7 +25,7 @@
         {{#skills}}{{.}}, {{/skills}}
       </section>
     </a>
-    {{/users}}
+    {{/robots}}
 
 </section>
 </body>
